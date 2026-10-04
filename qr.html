@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta property="og:image" content="/img/valley-preview.jpg" />
+    <meta name="theme-color" content="#030616" />
+    <title>Heart QR — A Valley of Lilies</title>
+    <link rel="icon" href="/heart.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/qr.js"></script>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">for the surprise</p>
+      <h1>A heart to scan</h1>
+      <p class="lead">Print it, slip it into a card, or show it on your phone. When she scans it, the valley opens.</p>
+      <div class="stage"><canvas id="qr" width="1400" height="1400" aria-label="Heart-shaped QR code"></canvas></div>
+      <label class="field">
+        <span>Message under the heart</span>
+        <input id="caption" maxlength="40" value="scan me, my love" />
+      </label>
+      <label class="field">
+        <span>Link inside the heart</span>
+        <input id="url" />
+      </label>
+      <div class="actions">
+        <button class="btn btn-primary" id="download">Download PNG</button>
+        <a class="btn" href="/">Open the valley</a>
+      </div>
+      <p class="tip">Tip: keep at least 4&nbsp;cm wide when printed so every phone camera can read it.</p>
+    </main>
+</body>
+</html>
